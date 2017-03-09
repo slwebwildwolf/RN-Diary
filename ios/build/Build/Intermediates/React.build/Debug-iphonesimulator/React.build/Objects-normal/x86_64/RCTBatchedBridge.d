@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBatchedBridge.m \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Modules/RCTDevLoadingView.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Modules/RCTRedBox.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTErrorCustomizer.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/React/Base/RCTUtils.h

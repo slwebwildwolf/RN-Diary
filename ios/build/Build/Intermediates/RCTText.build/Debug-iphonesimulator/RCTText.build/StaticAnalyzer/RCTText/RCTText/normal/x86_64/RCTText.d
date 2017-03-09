@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/Libraries/Text/RCTText.m \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/Libraries/Text/RCTText.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/sdb/Desktop/codeForTest/React-Native/RNDataTest/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h

@@ -8,7 +8,7 @@ import React, {Component} from 'react';
 import {
     AppRegistry,
     //iOS状态栏
-    StatuBarIOS,
+    // StatuBarIOS,
     //AsyncStorage存储工具
     AsyncStorage,
 } from 'react-native';
@@ -41,16 +41,16 @@ export default class RNDataTest extends Component {
 
     //组件生命周期函数，该函数在render之前执行，做渲染前的准备工作
     componentWillMount(){
-        if (StatusBarIOS != null){
-            StatusBarIOS.setHider(true);
-        }
+        // if (StatusBarIOS != null){
+        //     StatusBarIOS.setHider(true);
+        // }
     }
 
 
     render() {
         // return this.showDiaryReader();
-        // return this.showDiaryList();
-        return this.showDiarywriter();
+         return this.showDiaryList();
+        // return this.showDiarywriter();
     }
 }
 

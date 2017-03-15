@@ -32,7 +32,7 @@ export default class RNDataTest extends Component {
     listIndex: null;
 
     //getTimeString
-    getTimeString(ctime){
+    getTimeString(ctime) {
         let timeString = '' + ctime.getFullYear() + '年' + (ctime.getMonth() + 1) + '月' +
             ctime.getDay() + '日 星期' + (ctime.getDay() + 1) + ctime.getHours() + ':' +
             ctime.getMinutes();
@@ -192,7 +192,7 @@ export default class RNDataTest extends Component {
         if (this.listIndex === (this.realDairyList.length - 1))
             return;
 
-        this.listIndex ++ ;
+        this.listIndex++;
 
         let index = this.listIndex;
         let newMoodIcon;
@@ -231,15 +231,15 @@ export default class RNDataTest extends Component {
     }
 
     //返回按钮
-    returnPressed(){
+    returnPressed() {
         this.state = {
-            uiCode:1,
+            uiCode: 1,
         };
 
     }
 
     //保存日记并返回
-    saveDiaryAndReturn(newDiaryMood,newDiaryBody,newDiaryTitle){
+    saveDiaryAndReturn(newDiaryMood, newDiaryBody, newDiaryTitle) {
         let ctime = new Date();
         let timeString = this.getTimeString(ctime);
 
@@ -249,29 +249,110 @@ export default class RNDataTest extends Component {
         aDiary.body = newDiaryBody;
         aDiary.mood = newDiaryMood;
         aDiary.time = ctime;
-        aDiary.sectionId = ''+ ctime.getFullYear() + ' 年 ' + (ctime.getMonth() + 1) + ' 月 ';
 
+        //sectionId对日记列表进行分段显示
+        aDiary.sectionId = '' + ctime.getFullYear() + ' 年 ' + (ctime.getMonth() + 1) + ' 月 ';
+        //从当前时间生成唯一值，用来索引日记列表，由于时间精确到毫秒，可以认为是唯一的
+        aDiary.index = Date.parse(ctime);
 
+        AsyncStorage.setItem('' + aDiary.index, JSON.stringify(aDiary)).then(
+            () => {
+                //将新建的日记存储在本地
+                console.log('saving successed!');
+            },
+            (error) => {
+                console.log('saving error,error:' + error);
+            }
+        ).catch(
+            () => {
+                console.log('saving error has been catched!');
+            }
+        );
 
+        let totalLength = this.realDairyList.length;
+
+        //将新的日记加入列表
+        this.realDairyList[totalLength] = aDiary;
+
+        this.listIndex = totalLength;
+        let newMoodIcon;
+        switch (this.realDairyList[index].mood) {
+            case 2:
+                newMoodIcon = angryMood;
+                break;
+            case 3:
+                newMoodIcon = sadMood;
+                break;
+            case 4:
+                newMoodIcon = happyMood;
+                break;
+            case 5:
+                newMoodIcon = peaceMood;
+                break;
+            default:
+                newMoodIcon = peaceMood;
+        }
+
+        this.state = {
+            uiCode: 1,
+            diaryMood: newMoodIcon,
+            diaryTime: timeString,
+            diaryTitle: newtitle,
+            diaryBody: newbody,
+        }
     }
 
+    //写日记按钮被按下时调用
+    writeDiary() {
+        this.state = {
+            //uiCode = 3是写日记
+            uiCode: 3,
+        }
+    }
 
-    //在类中定义各种成员函数
+    searchKeyword(keyword) {
+        console.log('search button pressed, the keyword is' + keyword);
+    }
+
+    //列表中的某条记录被选中时的函数
+    selectLististItem() {
+        this.state = {
+            uiCode: 2,
+        }
+    }
+
     showDiaryList() {
         return (
-            <DiaryList />)
-            ;
-    }
-
-    showDiaryReader() {
-        return (
-            <DiaryReader />
+            <DiaryList fakeListTitle={this.state.diaryTitle}
+                       fakeListTime={this.state.diaryTime}
+                       fakeListMood={this.state.diaryMood}
+                       selectLististItem={this.selectLististItem()}
+                       searchKeyword={this.searchKeyword()}
+                       writeDiary={this.writeDiary()}
+            />
         );
     }
 
-    showDiarywriter() {
+
+    showDiaryReader() {
         return (
-            <DiaryWriter />
+            //上层组件的状态机常量作为属性向下层传递，上层组件的函数也作为回调函数向下层组件传递
+            <DiaryReader returnToDiaryList={this.returnToDiaryList}
+                         diaryTitle={this.state.diaryTitle}
+                         diaryMood={this.state.diaryTitle}
+                         diaryTime={this.state.diaryTime}
+                         readingPreviousPressed = {this.readingPreviousPressed()}
+                         returnPressed = {this.returnPressed()}
+                         readingNextPressed = {this.readingNextPressed()}
+                         diaryBody={this.state.diaryBody} />
+        );
+    }
+
+    showDiaryWriter(){
+        return (
+            <DiaryWriter returnPressed = {this.returnPressed()}
+                         saveDiary = {this.saveDiaryAndReturn()}
+            />
         );
     }
 
@@ -282,11 +363,12 @@ export default class RNDataTest extends Component {
         // }
     }
 
-
     render() {
-        // return this.showDiaryReader();
-        return this.showDiaryList();
-        // return this.showDiarywriter();
+
+        if (this.state.uiCode === 1) return this.showDiaryList();
+        if (this.state.uiCode === 2) return this.showDiaryReader();
+        if (this.state.uiCode === 3) return this.showDiaryWriter();
+
     }
 }
 
